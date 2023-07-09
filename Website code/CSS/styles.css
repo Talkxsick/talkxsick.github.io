@@ -1,0 +1,269 @@
+/*Base Style*/
+
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    display: block;
+    padding-top: 75px;
+}
+
+.container {
+    width: 970px;
+    margin: auto;
+    padding-top: 75px;
+}
+
+.container h3,
+h4 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.container h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container h4 {
+    font-size: 15px;
+}
+
+
+/* Header */
+
+.header-container,
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    width: 907px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    background-color: #222;
+    height: 75px;
+    padding: 20px;
+    position: fixed;
+    z-index: 300;
+}
+
+header #company-logo {
+    flex: 2;
+}
+
+header h1 {
+    font-size: 25px;
+    font-weight: thin;
+    font-family: "Rock Salt", cursive;
+    color: white;
+    line-height: 35px;
+    text-shadow: 1px 1px 3px #333;
+}
+
+header .menu-wrapper {
+    flex: 2;
+    line-height: 35px;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+
+/* Hero Image */
+
+#hero-image {
+    height: 100vh;
+    background: black url("../IMAGES/Hero.jpg") no-repeat fixed center;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tag-line {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    opacity: 0.5;
+    color: #ccc;
+}
+
+
+/* Top button */
+
+#topButton {
+    position: fixed;
+    z-index: 99;
+    bottom: 20px;
+    right: 30px;
+    padding: 15px;
+    background-color: red;
+    font: 18px;
+    color: white;
+    border-radius: 2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: none;
+}
+
+#topButton:hover {
+    background-color: #555;
+}
+
+
+/* Our Story */
+
+#our-story {
+    padding: 25px 0px;
+}
+
+#our-story p {
+    text-align: justify;
+}
+
+
+/* Gallery */
+
+#gallery {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px 0;
+}
+
+.gallery-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+.gallery-item {
+    flex: 1;
+    flex-basis: 33%;
+}
+
+.gallery-description {
+    margin-bottom: 20px;
+}
+
+
+/* Events */
+
+#events {
+    background-color: #eee;
+    padding: 25px 0;
+}
+
+#upcoming-events-table {
+    width: 100%;
+    border-spacing: 10px;
+    border-collapse: separate;
+    margin-bottom: 20px;
+}
+
+#upcoming-events-table th {
+    text-align: left;
+    font-weight: bolder;
+}
+
+
+/* Contact */
+
+#contact {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+#contact fieldset {
+    width: 80%;
+    margin: auto;
+    background-color: #eee;
+    padding: 20px;
+    box-shadow: 0 0 4px #ddd;
+}
+
+#contact p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#contact input,
+#contact textarea {
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#contact input {
+    height: 4opx;
+}
+
+#contact textarea {
+    height: 200px;
+}
+
+#contact button {
+    width: 100%;
+    height: 40px;
+}
+
+#contact button:hover {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    position: relative;
+    bottom: 0;
+    height: 100px;
+}
+
+footer .menu-wrapper {
+    flex: 1;
+    line-height: 35px;
+    text-align: left;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 0 10px;
+    line-height: 100px;
+}
+
+footer #copyright {
+    color: #fff;
+    line-height: 100px;
+}
